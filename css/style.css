@@ -237,6 +237,7 @@ body {
   text-align: center;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s;
 }
 .feature-box__icon {
   font-size: 6rem;
@@ -246,6 +247,10 @@ body {
   -webkit-background-clip: text;
   color: transparent;
 }
+.feature-box:hover {
+  transform: translateY(-1.5rem) scale(1.03);
+}
+
 .header {
   height: 95vh;
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.7176470588), rgba(40, 180, 133, 0.7176470588)), url(../img/hero.jpg);
@@ -317,6 +322,11 @@ body {
   padding: 20rem;
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.7176470588), rgba(40, 180, 133, 0.7176470588)), url(../img/nat-4.jpg);
   background-size: cover;
+  transform: skewY(-6.5deg);
+  margin-top: -10rem;
+}
+.section-features > * {
+  transform: skewY(7deg);
 }
 
 /*# sourceMappingURL=style.css.map */

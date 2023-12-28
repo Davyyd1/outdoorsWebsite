@@ -8,4 +8,10 @@
     padding: 20rem;
     background-image: linear-gradient(to right bottom, $color-primary-light,$color-primary-dark),url(../img/nat-4.jpg);
     background-size: cover ;
+    transform: skewY(-6.5deg);
+    margin-top: -10rem;
+
+    & > * {
+        transform: skewY(7deg);
+    }
 }
