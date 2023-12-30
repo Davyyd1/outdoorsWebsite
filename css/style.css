@@ -395,11 +395,12 @@ body {
   border-radius: 3px;
   padding: 6rem;
   padding-left: 9rem;
-  background-color: #Fff;
+  background-color: rgba(255, 255, 255, 0.6);
   color: #000;
   font-size: 1.6rem;
   transform: skewX(-12deg);
   position: relative;
+  border: 1px solid rgba(0, 0, 0, 0.2);
 }
 .story__shape {
   width: 15rem;
@@ -438,6 +439,21 @@ body {
 .story:hover .story__caption {
   opacity: 1;
   transform: translate(-31%, -50%);
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.15;
+}
+.bg-video__content {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .header {
@@ -527,7 +543,7 @@ body {
 
 .section-stories {
   padding: 15rem 0;
-  background-color: #f7f7f7;
+  position: relative;
 }
 
 /*# sourceMappingURL=style.css.map */
