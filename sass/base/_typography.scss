@@ -58,6 +58,8 @@ body {
 
     @include respond(tab-port) {
         font-size: 3rem;
+        margin-bottom: 0rem;
+        margin-top: 3rem;
         
     }
     @include respond(phone) {
